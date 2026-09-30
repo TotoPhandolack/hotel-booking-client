@@ -1,5 +1,5 @@
 "use client"
-import Hero from "./components/Hero";
+import Home from "./(main)/pages/home/Home";
 import Navbar from "./components/Navbar";
 import { usePathname } from "next/navigation";
 const page = () => {
@@ -9,7 +9,9 @@ const page = () => {
   return (
     <div>
       {!isOwnerPath && <Navbar />}
-      <div ></div>
+      <div className="min-h-[70vh]">
+        <Home/>
+      </div>
     </div>
   )
 }
